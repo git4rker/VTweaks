@@ -1,0 +1,12 @@
+name: ValentinosTweaks
+version: '0.0'
+main: gg.valentinos.alexjoo.ValentinosTweaks
+api-version: '1.21'
+authors: [ Alex_Joo ]
+description: ValentinosTweaks, short for Valentinos Tweaks, is a plugin that adds various tweaks to the server.
+website: valentinos.gg
+commands:
+  welcome:
+    description: Sends a welcome message to the player.
+    usage: /welcome
+    aliases: [ w ]
