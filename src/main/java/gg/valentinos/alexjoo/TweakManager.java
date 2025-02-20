@@ -18,9 +18,8 @@ public class TweakManager {
         registerTweak(new WelcomeMessageTweak());
 
         for (AbstractTweak tweak : tweaks.values()) {
-            plugin.getLogger().info("Loading tweak: " + tweak.getId() + "...");
-            tweak.setConfig(ValentinosTweaks.getInstance().getTweakConfigHandler().getTweakConfig(tweak.getId()));
-            tweak.setEnabled(ValentinosTweaks.getInstance().getTweakConfigHandler().isTweakEnabled(tweak.getId()));
+            tweak.setConfig(plugin.getTweakConfigHandler().getTweakConfig(tweak.getId()));
+            tweak.setEnabled(plugin.getTweakConfigHandler().isTweakEnabled(tweak.getId()));
         }
     }
 

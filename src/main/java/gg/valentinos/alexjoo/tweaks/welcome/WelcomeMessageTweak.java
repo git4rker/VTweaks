@@ -35,6 +35,8 @@ public class WelcomeMessageTweak extends AbstractTweak {
     }
     public void setMessage(String message) {
         this.message = message;
+        config.set("message", message);
+        plugin.getTweakConfigHandler().setTweakConfig(id, config);
     }
 
 }

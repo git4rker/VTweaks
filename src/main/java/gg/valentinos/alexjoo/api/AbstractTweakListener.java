@@ -4,14 +4,29 @@ import gg.valentinos.alexjoo.ValentinosTweaks;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 
+/**
+ * Abstract class for all tweak listeners. This class provides a simple way to register and unregister listeners.
+ */
 public abstract class AbstractTweakListener implements Listener {
-    protected final ValentinosTweaks plugin = ValentinosTweaks.getInstance();
+    /**
+     * The plugin instance.
+     */
+    protected static final ValentinosTweaks plugin = ValentinosTweaks.getInstance();
+    /**
+     * Whether the listener is registered.
+     */
     protected boolean registered;
 
+    /**
+     * Constructor.
+     */
     public AbstractTweakListener() {
         this.registered = false;
     }
 
+    /**
+     * Registers the listener and calls {@link #onRegister()}. Does nothing if the listener is already registered.
+     */
     public void register() {
         if (!registered) {
             plugin.getServer().getPluginManager().registerEvents(this, plugin);
@@ -19,6 +34,9 @@ public abstract class AbstractTweakListener implements Listener {
             onRegister();
         }
     }
+    /**
+     * Unregisters the listener and calls {@link #onUnregister()}. Does nothing if the listener is not registered.
+     */
     public void unregister() {
         if (registered) {
             HandlerList.unregisterAll(this);
@@ -27,7 +45,13 @@ public abstract class AbstractTweakListener implements Listener {
         }
     }
 
+    /**
+     * Called when the listener is registered.
+     */
     protected abstract void onRegister();
+    /**
+     * Called when the listener is unregistered.
+     */
     protected abstract void onUnregister();
 
 }
