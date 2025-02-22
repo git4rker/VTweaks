@@ -10,7 +10,7 @@ public class WelcomeSetSubCommand extends AbstractTweakSubCommand {
     private final WelcomeMessageTweak tweak;
 
     protected WelcomeSetSubCommand(WelcomeMessageTweak tweak) {
-        super("set", "valentinostweaks.welcome.set", "Set the welcome message", "/welcome set <message>");
+        super("set", "tweaks.welcome.set", "Set the welcome message", "/welcome set <message>");
         this.tweak = tweak;
     }
 
