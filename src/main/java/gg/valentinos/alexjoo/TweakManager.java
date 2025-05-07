@@ -1,8 +1,8 @@
 package gg.valentinos.alexjoo;
 
 import gg.valentinos.alexjoo.api.AbstractTweak;
+import gg.valentinos.alexjoo.tweaks.enchant_disabler.EnchantDisablerTweak;
 import gg.valentinos.alexjoo.tweaks.welcome.WelcomeMessageTweak;
-
 import java.util.Collection;
 import java.util.HashMap;
 
@@ -16,6 +16,7 @@ public class TweakManager {
 
     public void loadTweaks(){
         registerTweak(new WelcomeMessageTweak());
+        registerTweak(new EnchantDisablerTweak());
 
         for (AbstractTweak tweak : tweaks.values()) {
             tweak.setConfig(plugin.getTweakConfigHandler().getTweakConfig(tweak.getId()));

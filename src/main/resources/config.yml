@@ -1,4 +1,11 @@
 tweaks:
   welcome:
     enabled: true
-    message: "Welcome to the server!"
+    message: "Welcome to the test2!"
+  enchant-disabler:
+    enabled: true
+    items: [
+      "ELYTRA",
+      "MACE",
+      "NETHERITE_SWORD"
+    ]
