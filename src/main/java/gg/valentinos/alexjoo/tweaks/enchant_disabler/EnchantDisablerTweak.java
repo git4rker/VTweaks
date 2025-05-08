@@ -23,7 +23,6 @@ public class EnchantDisablerTweak extends AbstractTweak {
 
     @Override
     public void onDisable() {
-
         listener.unregister();
         plugin.getLogger().info("EnchantDisabler disabled");
     }
