@@ -7,6 +7,8 @@ description: ValentinosTweaks, short for Valentinos Tweaks, is a plugin that add
 website: valentinos.gg
 commands:
   welcome:
-    description: Sends a welcome message to the player.
+    # tweaks.welcome permission to use this command
+    # tweaks.welcome.set permission to set the welcome message
+    description: Sends a welcome message to the player. /welcome set <message> to set a new one.
     usage: command is currently disabled
     aliases: [ w ]

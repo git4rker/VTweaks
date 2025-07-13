@@ -1,11 +1,10 @@
 tweaks:
   welcome:
-    enabled: true
-    message: "Welcome to the test2!"
+    enabled: false
+    message: "Welcome to the server!"
   enchant-disabler:
     enabled: true
-    items: [
-      "ELYTRA",
-      "MACE",
-      "NETHERITE_SWORD"
-    ]
+    # Get material names from here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+    items:
+      - "ELYTRA"
+#      - "MACE"

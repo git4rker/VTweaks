@@ -5,21 +5,36 @@ This plugin is a collection of tweaks and features that I've added to my Minecra
 
 ## Features
 ### Welcome Message Feature
+This is mostly an example of how every feature should look and how it should be documented. This feature is disabled by default.
+
 This feature creates a welcome message which is sent to every player upon joining the server. The message is configurable in the configs and the plugin enables 1 command with an optional subcommand.
-The command is `/welcome` which upon the execution without arguments - simply shows the sender the current welcome message. Requres `tweaks.welcome` permission.
+
+The command is `/welcome` which upon the execution without arguments - simply shows the sender the current welcome message. Requires `tweaks.welcome` permission.
+
 The subcommand is `/welcome set <message>` allows the sender to set a new welcome message, this **will** overwrite what is written in the config. The message can be a multi word message. Requires `tweaks.welcome.set` permission
+
 ```yaml
-tweaks:
-  welcome:
-    enabled: true
+welcome:
+    enabled: false
     message: "Welcome to the server!"
 ```
 
+### Enchant Disabler
+This feature adds a new configurable list in the config `enchant-disabler.items`. All the items in the list will be un-enchantable, be it through the enchanting table or the anvil. Here is it's content by default:
+```yaml
+  enchant-disabler:
+    enabled: true
+    # Get material names from here: https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html
+    items:
+      - "ELYTRA"
+  #      - "MACE"
+```
+
 ## Plans
-- **Enable/Disable features** - Enable or disable features through commands in game.
-- **Item enchantment forbidding** - Forbid enchanting certain items.
-- **Item crafting unusability** - Forbid certain items from being used in recipes.
-- **Custom potion effects** - Add custom potion effects.
-- **Help and list commands** - List all available commands and help for each command.
-- and more...
+- [ ] **Enable/Disable features** - Enable or disable features through commands in game.
+- [x] **Item enchantment forbidding** - Forbid enchanting certain items.
+- [ ] **Item crafting unusability** - Forbid certain items from being used in recipes.
+- [ ] **Custom potion effects** - Add custom potion effects.
+- [ ] **Help and list commands** - List all available commands and help for each command.
+- [ ] and more...
 
