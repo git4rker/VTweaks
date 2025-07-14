@@ -1,6 +1,6 @@
 package gg.valentinos.alexjoo.api;
 
-import gg.valentinos.alexjoo.ValentinosTweaks;
+import gg.valentinos.alexjoo.VTweaks;
 import org.bukkit.configuration.ConfigurationSection;
 
 /**
@@ -11,7 +11,7 @@ public abstract class AbstractTweak {
     /**
      * The plugin instance.
      */
-    protected static final ValentinosTweaks plugin = ValentinosTweaks.getInstance();
+    protected static final VTweaks plugin = VTweaks.getInstance();
     /**
      * The unique identifier for the tweak. This is the key in the configuration file.
      */

@@ -1,9 +1,9 @@
-name: ValentinosTweaks
-version: '0.2.0'
-main: gg.valentinos.alexjoo.ValentinosTweaks
+name: VTweaks
+version: '0.2.1'
+main: gg.valentinos.alexjoo.VTweaks
 api-version: '1.21'
 authors: [ Alex_Joo ]
-description: ValentinosTweaks, short for Valentinos Tweaks, is a plugin that adds various tweaks to the server.
+description: VTweaks, short for Valentinos Tweaks, is a plugin that adds various tweaks to the server.
 website: valentinos.gg
 commands:
   welcome:

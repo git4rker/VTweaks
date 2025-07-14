@@ -1,6 +1,6 @@
 package gg.valentinos.alexjoo.api;
 
-import gg.valentinos.alexjoo.ValentinosTweaks;
+import gg.valentinos.alexjoo.VTweaks;
 import org.bukkit.event.HandlerList;
 import org.bukkit.event.Listener;
 
@@ -11,7 +11,7 @@ public abstract class AbstractTweakListener implements Listener {
     /**
      * The plugin instance.
      */
-    protected static final ValentinosTweaks plugin = ValentinosTweaks.getInstance();
+    protected static final VTweaks plugin = VTweaks.getInstance();
     /**
      * Whether the listener is registered.
      */

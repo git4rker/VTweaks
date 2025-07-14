@@ -2,8 +2,8 @@ package gg.valentinos.alexjoo;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ValentinosTweaks extends JavaPlugin {
-    private static ValentinosTweaks instance;
+public final class VTweaks extends JavaPlugin {
+    private static VTweaks instance;
     private TweakConfigHandler tweakConfig;
     private TweakManager tweakManager;
 
@@ -17,7 +17,7 @@ public final class ValentinosTweaks extends JavaPlugin {
 
         tweakManager.loadTweaks();
 
-        getLogger().info("ValentinosTweaks has been enabled!");
+        getLogger().info("VTweaks has been enabled!");
     }
 
     @Override
@@ -30,7 +30,7 @@ public final class ValentinosTweaks extends JavaPlugin {
         tweakConfig = null;
         instance = null;
 
-        getLogger().info("ValentinosTweaks has been disabled!");
+        getLogger().info("VTweaks has been disabled!");
     }
 
     public TweakConfigHandler getTweakConfigHandler() {
@@ -39,7 +39,7 @@ public final class ValentinosTweaks extends JavaPlugin {
     public TweakManager getTweakManager() {
         return tweakManager;
     }
-    public static ValentinosTweaks getInstance() {
+    public static VTweaks getInstance() {
         return instance;
     }
 }

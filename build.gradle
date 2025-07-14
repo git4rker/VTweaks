@@ -4,7 +4,7 @@ plugins {
 
 description = 'A plugin with a collection of features that would be nice to have on our server, but are not significant enough to have their own plugin. The idea is to have a config file with a bunch of boolean variables to turn on or off features. '
 group = 'gg.valentinos'
-version = '0.2.0'
+version = '0.2.1'
 
 repositories {
     mavenCentral()
@@ -50,7 +50,7 @@ tasks.register('buildAndRestartDocker') {
         }
         def dockerContainer = System.getenv("DOCKER_CONTAINER")
 
-        def pluginFile = file("build/libs/ValentinosTweaks-${version}.jar")
+        def pluginFile = file("build/libs/VTweaks-${version}.jar")
         def outputDir = file(pluginPath)
 
         copy {

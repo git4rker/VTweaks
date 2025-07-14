@@ -22,22 +22,22 @@ public class TweakConfigHandler {
     }
     public void setTweakEnabled(String tweakId, boolean enabled) {
         enabledStates.put(tweakId, enabled);
-        ValentinosTweaks.getInstance().getConfig().set("tweaks." + tweakId + ".enabled", enabled);
-        ValentinosTweaks.getInstance().saveConfig();
+        VTweaks.getInstance().getConfig().set("tweaks." + tweakId + ".enabled", enabled);
+        VTweaks.getInstance().saveConfig();
     }
     public void setTweakConfig(String tweakId, ConfigurationSection config) {
         tweakConfigs.put(tweakId, config);
-        ValentinosTweaks.getInstance().getConfig().set("tweaks." + tweakId, config);
-        ValentinosTweaks.getInstance().saveConfig();
+        VTweaks.getInstance().getConfig().set("tweaks." + tweakId, config);
+        VTweaks.getInstance().saveConfig();
     }
 
     public void reload(){
-        ValentinosTweaks.getInstance().reloadConfig();
+        VTweaks.getInstance().reloadConfig();
 
         enabledStates.clear();
         tweakConfigs.clear();
 
-        ConfigurationSection tweaksSection = ValentinosTweaks.getInstance().getConfig().getConfigurationSection("tweaks");
+        ConfigurationSection tweaksSection = VTweaks.getInstance().getConfig().getConfigurationSection("tweaks");
         if (tweaksSection != null) {
             for (String tweakId : tweaksSection.getKeys(false)) {
                 boolean enabled = tweaksSection.getBoolean(tweakId + ".enabled", false);

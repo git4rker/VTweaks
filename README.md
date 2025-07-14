@@ -1,7 +1,7 @@
 
-# ValentinosTweaks - Minecraft plugin
-
+# VTweaks - Minecraft plugin
 This plugin is a collection of tweaks and features that I've added to my Minecraft server. It's a work in progress and I'm adding new features as I need them with a development team.
+V in VTweaks stands for Valentinos - my gaming community server, if you want to join here's the invite: 
 
 ## Features
 ### Welcome Message Feature

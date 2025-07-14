@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 public class TweakManager {
     private final HashMap<String, AbstractTweak> tweaks;
-    private final ValentinosTweaks plugin = ValentinosTweaks.getInstance();
+    private final VTweaks plugin = VTweaks.getInstance();
 
     public TweakManager() {
         this.tweaks = new HashMap<>();
