@@ -48,10 +48,10 @@ public abstract class AbstractTweakListener implements Listener {
     /**
      * Called when the listener is registered.
      */
-    protected abstract void onRegister();
+    protected void onRegister() {}
     /**
      * Called when the listener is unregistered.
      */
-    protected abstract void onUnregister();
+    protected void onUnregister() {}
 
 }
