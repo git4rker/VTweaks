@@ -8,3 +8,9 @@ tweaks:
     items:
       - "ELYTRA"
 #      - "MACE"
+  animal-swim:
+    enabled: true
+    swim-assist-velocity: 0.15
+    # List of entity types: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+    entities:
+      - "HORSE"
