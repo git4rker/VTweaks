@@ -42,17 +42,4 @@ public class EnchantDisablerListener extends AbstractTweakListener {
             event.setResult(null);
         }
     }
-
-
-
-
-    @Override
-    protected void onRegister() {
-        // Still dont know bro
-    }
-
-    @Override
-    protected void onUnregister() {
-        // Still dont know bro
-    }
 }

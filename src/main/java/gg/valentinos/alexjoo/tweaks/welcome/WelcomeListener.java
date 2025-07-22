@@ -18,14 +18,4 @@ public class WelcomeListener extends AbstractTweakListener {
         Player player = event.getPlayer();
         player.sendMessage(tweak.getMessage());
     }
-
-    @Override
-    protected void onRegister() {
-        // sometimes you don't need to put anything here
-    }
-
-    @Override
-    protected void onUnregister() {
-        // sometimes you don't need to put anything here
-    }
 }

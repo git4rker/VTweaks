@@ -37,11 +37,11 @@ public abstract class AbstractTweak {
     /**
      * Method to initialize the tweak. This is where you should register commands, listeners, etc.
      */
-    public abstract void onEnable();
+    public void onEnable() {}
     /**
      * Method to disable the tweak. This is where you should unregister commands, listeners, etc.
      */
-    public abstract void onDisable();
+    public void onDisable() {}
 
     /**
      * @return The unique identifier for the tweak. This is the key in the configuration file.
