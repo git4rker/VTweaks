@@ -31,9 +31,14 @@ public class AnimalSwimListener extends AbstractTweakListener {
       vehicle.setVelocity(newVelocity);
     }
 
+    // prevents the player from being dismounted in water
     @EventHandler
     public void onEntityDismount(EntityDismountEvent event) {
       if (!(event.getEntity() instanceof Player player)) return;
+
+      Entity vehicle = event.getDismounted();
+
+      if (!tweak.isEntityEligible(vehicle)) return;
 
       // to stop player from being dismounted when they didn't choose to.
       if (!player.isSneaking() && player.isInWater())
