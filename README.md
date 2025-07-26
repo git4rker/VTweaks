@@ -5,7 +5,6 @@ V in VTweaks stands for Valentinos - my gaming community server, if you want to 
 
 ## Features
 
----
 ### Welcome Message Feature
 This is mostly an example of how every feature should look and how it should be documented. This feature is disabled by default.
 
@@ -42,7 +41,7 @@ This tweak allows selected (`animal-swim.entities`) mountable animal entities to
     entities:
       - "HORSE"
 ```
-
+---
 ## Plans
 - [ ] **Enable/Disable features** - Enable or disable features through commands in game.
 - [x] **Item enchantment forbidding** - Forbid enchanting certain items.
