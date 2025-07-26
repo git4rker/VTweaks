@@ -4,6 +4,8 @@ This plugin is a collection of tweaks and features that I've added to my Minecra
 V in VTweaks stands for Valentinos - my gaming community server, if you want to join here's the invite: https://discord.gg/valentinosgg
 
 ## Features
+
+---
 ### Welcome Message Feature
 This is mostly an example of how every feature should look and how it should be documented. This feature is disabled by default.
 
@@ -18,7 +20,7 @@ welcome:
     enabled: false
     message: "Welcome to the server!"
 ```
-
+---
 ### Enchant Disabler
 This feature adds a new configurable list in the config `enchant-disabler.items`. All the items in the list will be un-enchantable, be it through the enchanting table or the anvil. Here is it's content by default:
 ```yaml
@@ -29,6 +31,17 @@ This feature adds a new configurable list in the config `enchant-disabler.items`
       - "ELYTRA"
   #      - "MACE"
 ```
+---
+### Animal Swim
+This tweak allows selected (`animal-swim.entities`) mountable animal entities to swim while having a player riding them. It achieves this result by adding a vertical velocity on vehicle entity, that is configurable at `animal-swim.swim-assist-velocity`. Here is the default config:
+```yaml
+  animal-swim:
+    enabled: true
+    swim-assist-velocity: 0.15
+    # List of entity types: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/entity/EntityType.html
+    entities:
+      - "HORSE"
+```
 
 ## Plans
 - [ ] **Enable/Disable features** - Enable or disable features through commands in game.
@@ -36,5 +49,5 @@ This feature adds a new configurable list in the config `enchant-disabler.items`
 - [ ] **Item crafting unusability** - Forbid certain items from being used in recipes.
 - [ ] **Custom potion effects** - Add custom potion effects.
 - [ ] **Help and list commands** - List all available commands and help for each command.
-- [ ] and more...
+- [x] and more...
 

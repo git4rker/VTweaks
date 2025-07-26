@@ -33,10 +33,9 @@ public class AnimalSwimListener extends AbstractTweakListener {
 
     @EventHandler
     public void onEntityDismount(EntityDismountEvent event) {
-      if (!(event.getEntity() instanceof Player)) return;
+      if (!(event.getEntity() instanceof Player player)) return;
 
-      Player player = (Player) event.getEntity();
-
+      // to stop player from being dismounted when they didn't choose to.
       if (!player.isSneaking() && player.isInWater())
         event.setCancelled(true);
     }
